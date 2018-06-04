@@ -25,7 +25,7 @@ export class FacebookLoginProvider extends BaseLoginProvider {
             autoLogAppEvents: true,
             cookie: true,
             xfbml: true,
-            version: 'v2.10'
+            version: this.apiVersion
           });
           FB.AppEvents.logPageView();
 
