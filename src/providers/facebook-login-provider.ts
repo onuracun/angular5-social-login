@@ -8,10 +8,11 @@ export class FacebookLoginProvider extends BaseLoginProvider {
   public static readonly PROVIDER_ID = 'facebook';
   public loginProviderObj: LoginProviderClass = new LoginProviderClass();
 
-  constructor(private clientId: string, private scope : string) {
+  constructor(private apiVersion :string, private clientId: string, private scope : string) {
     super();
     this.loginProviderObj.id = clientId;
     this.loginProviderObj.scope = scope;
+    this.loginProviderObj.apiVersion = apiVersion;
     this.loginProviderObj.name = 'facebook';
     this.loginProviderObj.url = 'https://connect.facebook.net/en_US/sdk.js';
   }
