@@ -12,6 +12,7 @@ export class LoginProviderClass {
   name: string;
   id: string;
   url: string;
+  scope : string;
 }
 
 export class LinkedInResponse {
